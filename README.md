@@ -1,16 +1,28 @@
-# 🎓 Tutor Finder Platform
+# 🎓 Tutor Connect
 
-A web-based platform that helps students find suitable tutors based on subject, location, and preferences. The goal is to simplify the process of connecting students with the right tutors without unnecessary friction.
+Tutor Connect is a web platform designed to simplify how students find and connect with the right tutors based on their needs. Instead of relying on scattered sources or word-of-mouth, this system brings everything into one place — searchable, filterable, and easy to use.
+
+---
+
+## 💡 Why this project?
+
+Finding a good tutor is often harder than it should be. Students usually struggle with:
+
+* Limited visibility of available tutors
+* No proper filtering based on subject or preferences
+* Lack of structured information
+
+Tutor Connect aims to solve this by providing a centralized platform where students can explore and connect with tutors more efficiently.
 
 ---
 
 ## 🚀 Features
 
-* 🔍 Search tutors by subject and filters
-* 📍 Location-based filtering
-* ⭐ Rating-based sorting
-* 📊 Clean dashboard UI
-* 👨‍🏫 Tutor listing and profile view
+* 🔍 Search tutors based on subjects
+* ⭐ Filter tutors using ratings and preferences
+* 📍 Location-based discovery (planned/improving)
+* 🧾 Structured tutor profiles
+* ⚡ Clean and responsive UI
 
 ---
 
@@ -34,11 +46,11 @@ A web-based platform that helps students find suitable tutors based on subject, 
 
 ## 📁 Project Structure
 
-```
+```id="q9y6gq"
 tutor-connect/
 │
-├── frontend/        # React application
-├── backend/         # API + server logic
+├── frontend/        # React frontend
+├── backend/         # Express API and business logic
 ├── README.md
 ```
 
@@ -48,8 +60,8 @@ tutor-connect/
 
 ### 1. Clone the repository
 
-```
-git clone https://github.com/Arushagarwal28/tutorconnect.git
+```id="0z7y54"
+git clone https://github.com/Arushagarwal28/tutor-connect.git
 cd tutor-connect
 ```
 
@@ -59,7 +71,7 @@ cd tutor-connect
 
 **Frontend**
 
-```
+```id="m4r9ok"
 cd frontend
 npm install
 npm start
@@ -67,7 +79,7 @@ npm start
 
 **Backend**
 
-```
+```id="b7qk2y"
 cd backend
 npm install
 npm run dev
@@ -75,46 +87,63 @@ npm run dev
 
 ---
 
-### 3. Environment Variables
+### 3. Environment Setup
 
-Create a `.env` file in backend:
+Create a `.env` file inside the backend folder:
 
-```
+```id="1u9vcd"
 PORT=5000
-MONGO_URI=your_mongodb_url
-JWT_SECRET=your_secret
+MONGO_URI=your_mongodb_connection
+JWT_SECRET=your_secret_key
 ```
 
 ---
 
-## 💡 Current Status
+## 🔌 API Overview
 
-Core functionality is implemented:
+Basic endpoints available:
 
-* Tutor search and filtering works
-* Basic UI and routing done
-* Backend APIs functional
+```id="i8q0zp"
+POST   /api/auth/register
+POST   /api/auth/login
 
-Still improving performance, UI polish, and feature depth.
+GET    /api/tutors
+POST   /api/tutors
+
+GET    /api/reviews
+POST   /api/reviews
+```
+
+---
+
+## 📊 Current Status
+
+The core functionality is implemented and working:
+
+* Backend APIs are functional
+* Tutor listing and filtering works
+* Frontend is connected with backend
+
+The project is still under active development with improvements planned.
 
 ---
 
 ## 🔮 Future Scope
 
-There’s a lot that can be built on top of this:
+Planned improvements to make the platform more practical and scalable:
 
 * 📊 **Progress Tracking & Analytics**
-  Students can track learning progress, sessions completed, and performance insights.
+  Allow students to monitor learning progress, sessions, and performance.
 
 * 🔐 **OTP Authentication**
-  Secure login/signup using OTP (email or phone-based verification).
+  Add secure login/signup using OTP verification.
 
 * 🛠️ **Admin Panel**
-  A dedicated dashboard to manage users, tutors, reports, and platform activity.
+  Dashboard for managing users, tutors, and platform activity.
 
-* 💬 Real-time chat between student and tutor
+* 💬 Real-time chat between tutors and students
 
-* 📅 Booking system with time slots
+* 📅 Session booking system
 
 * 💳 Payment integration
 
@@ -122,13 +151,13 @@ There’s a lot that can be built on top of this:
 
 ## 🤝 Contributing
 
-This project is still evolving. Feel free to fork and experiment.
+This project is part of an ongoing learning process. Contributions, suggestions, and improvements are welcome.
 
 ---
 
 ## 📌 Note
 
-This project is part of ongoing development and learning. Expect changes, improvements, and some rough edges.
+This is an evolving project built to explore full-stack development and real-world application structure. Some features are still in progress and will be refined over time.
 
 ---
 
