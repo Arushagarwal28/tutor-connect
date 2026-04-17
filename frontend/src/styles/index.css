@@ -316,9 +316,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   box-shadow:var(--shadow-blue);
 }
 .tutor-cta-text { flex:1; min-width:200px; }
-.tutor-cta-text h3 { font-size:24px; font-weight:700; color:white; margin-bottom:8px; }
-.tutor-cta-text p { color:rgba(255,255,255,0.75); font-size:15px; }
-.tutor-cta-steps { display:flex; align-items:center; gap:12px; color:white; font-weight:600; flex-wrap:wrap; }
+.tutor-cta-text h3 { font-size:24px; font-weight:700; color:rgb(0, 0, 0); margin-bottom:8px; }
+.tutor-cta-text p { color:rgba(0, 0, 0, 0.75); font-size:15px; }
+.tutor-cta-steps { display:flex; align-items:center; gap:12px; color:rgb(0, 0, 0); font-weight:600; flex-wrap:wrap; }
 .cta-step { background:rgba(255,255,255,0.15); padding:8px 16px; border-radius:var(--radius-md); font-size:14px; }
 .tutor-cta-box .btn-primary { background:white; color:var(--blue-700); border-color:white; flex-shrink:0; }
 .tutor-cta-box .btn-primary:hover { background:var(--blue-50); box-shadow:var(--shadow-lg); }

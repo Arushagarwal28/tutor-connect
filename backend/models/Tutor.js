@@ -17,7 +17,9 @@ const TutorSchema = new mongoose.Schema({
   achievements: String,
   demoVideo:    String,
 
-  
+  // ── Location (GeoJSON Point) ──────────────────────────
+  // Stored as GeoJSON so MongoDB 2dsphere index can do
+  // real distance queries.  coordinates = [lng, lat]
   location: {
     type: {
       type:    String,

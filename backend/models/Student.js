@@ -10,6 +10,8 @@ const StudentSchema = new mongoose.Schema({
 
   password: String,
 
+  // ── Location (GeoJSON Point) ──────────────────────────
+  // [longitude, latitude] — same convention as Tutor
   location: {
     type: {
       type:    String,
